@@ -1,0 +1,58 @@
+
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;;
+}
+
+.container{
+    background-color: #95a5a6;
+    padding: 30px;
+    margin: 30px;  
+    display: grid; /* Nothing will happned if we use it by itself */
+   /* grid-template-columns: 1fr 1fr; /* Two columns */ 
+   /*grid-template-columns:  1fr 1fr 1fr 1fr; /* Four columns- fr--> fraction */ 
+
+   grid-template-columns: repeat(2, 1fr); /* Two columns */ 
+   grid-template-rows: 5vh 70vh 5vh; /* vh height of the viewport.. 5vh: 1st row, 70vh 2nd row, 5vh 3rd row*/
+   
+
+}
+
+
+.header{
+    background-color: #FFA500;
+    padding: 10px;
+    grid-column:  1/-1; /*Merge from the begging to the end*/ 
+   
+
+
+}
+
+
+
+.sidebar{
+    background-color: CornflowerBlue;
+    padding: 10px;
+
+}
+
+
+
+.content{
+    background-color: #66CDAA;
+    padding: 10px;
+
+}
+
+
+.footer{
+    background-color: burlywood;
+    padding: 10px;
+    grid-column: 1/-1;;
+
+
+}
